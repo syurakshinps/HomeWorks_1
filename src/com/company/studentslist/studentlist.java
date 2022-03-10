@@ -1,6 +1,7 @@
 package com.company.studentslist;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class studentlist {
 
@@ -30,7 +31,7 @@ public class studentlist {
         list.add(new Students("10 Яковлев"));
 //        list.add(new Students("8 Григорьев"));
 
-        System.out.println(list.toString().replaceAll("([1-9])\\s", "  ++ 0($1) "));
+       System.out.println(list.toString().replaceAll("([1-9])\\s", "  ++ 0($1) "));
         list.sort(Students::compareTo);
         System.out.println(list);
 

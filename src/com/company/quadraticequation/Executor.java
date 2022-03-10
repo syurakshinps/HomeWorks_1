@@ -1,4 +1,3 @@
-//package com.company;
 package com.company.quadraticequation;
 
 import com.company.QuadraticEquation;

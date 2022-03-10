@@ -18,9 +18,7 @@ public class StringTrix {
         String Inside = str.toLowerCase().replace(" ", "");
         int k = 0;
         int l = 0;
-        //String str = "abbc";
-        //System.out.println("All substring of abbc are:");
-        for (int i = 0; i < Inside.length(); i++) {
+         for (int i = 0; i < Inside.length(); i++) {
             for (int j = i + 1; j <= Inside.length(); j++) {
                 outStrArray[k] = Inside.substring(i, j);
                 if (outStrArray[k].equals(Rev1Str(outStrArray[k])) && outStrArray[k] != null)
@@ -42,40 +40,6 @@ public class StringTrix {
         return reversed_string1;
     }
 
-
-    /*
-        public void ReverseString() {
-            FindAllStrings();
-            char[] outCharArray = new char[str.length()];
-            char[] RevCharArray = new char[str.length()];
-            String reversed_string1 = new String(RevCharArray);
-           char[] stringToReverse;
-           char [] [] AllStrings = new char [str.length()*str.length()][str.length()*str.length()];
-                for (int i = 1; i < outStrArray.length; i++)
-                {
-                    stringToReverse = outStrArray[i].toCharArray();
-                    AllStrings[i] = stringToReverse;
-                    for (int j = 0; j < AllStrings[i].length; j++)
-                    {
-                        RevCharArray[j] = AllStrings[i][AllStrings[i].length - j-1];
-                    }
-                    reversed_string1 = new String(RevCharArray);
-                    ReversedStrArray[i] = reversed_string1 ;
-                }
-                System.out.println("");
-        }
-
-    */
-/*
-    public Boolean isPalindrome()
-    {
-        if (1 == 1)
-        {
-            return true;
-        }
-    }
-
-*/
     public String FindMaxString() {
         int i;
         FindAllStrings();
