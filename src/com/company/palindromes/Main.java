@@ -1,4 +1,4 @@
-package com.company.Palindromes;
+package com.company.palindromes;
 
 public class Main {
     /*

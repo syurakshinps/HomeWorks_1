@@ -1,4 +1,4 @@
-package com.company.Palindromes;
+package com.company.palindromes;
 
 import com.company.StringTrix;
 

@@ -1,4 +1,4 @@
-package com.company.Palindromes;
+package com.company.palindromes;
 
 public class PalindromeSimple{
     /*Обучение Java/AT 2022, [15.02.2022 20:43]
