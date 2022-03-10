@@ -21,19 +21,29 @@ public class studentlist {
 
      */
     public static void main(String[] args) {
-        ArrayList<Students> list = new ArrayList<>();
-        list.add(new Students("9 Иванов"));
-        list.add(new Students("10 Петров"));
-        list.add(new Students("11 Сидоров"));
-        list.add(new Students("11 Сидоров"));
-        list.add(new Students("9 Григорьев"));
-        list.add(new Students("9 Сергеев"));
-        list.add(new Students("10 Яковлев"));
+        ArrayList<String> list = new ArrayList<>();
+        list.add("9 Иванов");
+        list.add("10 Петров");
+        list.add("11 Сидоров");
+        list.add("11 Сидоров");
+        list.add("9 Григорьев");
+        list.add("9 Сергеев");
+        list.add("10 Яковлев");
 //        list.add(new Students("8 Григорьев"));
 
-       System.out.println(list.toString().replaceAll("([1-9])\\s", "  ++ 0($1) "));
-        list.sort(Students::compareTo);
-        System.out.println(list);
+        for (String s : list)
+        {
+            String[] fields = s.split(" ");
+          //  System.out.println(fields[0] + fields[1]);
+            String[][] Records = new String[fields.length][2];
+            for (int i = 0; i<fields.length; i++)
+            {
+                Records[i][0] = fields[0];
+                Records[i][1] = fields[1];
+            }
+            System.out.println(Records[0][0] + Records[0][1]);
+
+        }
 
     }
 }

@@ -5,6 +5,10 @@ public class Students implements Comparable{
     public Students(String list) {
         this.list = list;
     }
+
+    //I DONT NEED THIS CLASS!
+
+
     @Override
     public int compareTo(Object o) {
         Students b = (Students) o;
