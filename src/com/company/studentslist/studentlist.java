@@ -1,6 +1,7 @@
 package com.company.studentslist;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 
 public class studentlist {
@@ -41,6 +42,14 @@ public class studentlist {
                 Records[i][0] = fields[0];
                 Records[i][1] = fields[1];
             }
+          //  System.out.println(Records[0][0] + Records[0][1]);
+
+
+            /*
+            https://www.geeksforgeeks.org/arrays-sort-in-java-with-examples/
+             */
+
+
             System.out.println(Records[0][0] + Records[0][1]);
 
         }
